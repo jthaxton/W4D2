@@ -1,0 +1,37 @@
+<h1>NEW CAT!!!!</h1>
+
+<form action="/cats" method="post" >
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+
+
+  <label for='name'> Name</label>
+  <input id='name' type = "text" name = "cat[name]">
+
+  <label for='sex'> Sex</label>
+  <input type="radio" name="cat[sex]" value="male"> Male
+  <input type="radio" name="cat[sex]" value="female"> Female<br>
+
+  <label for="color">Color</label>
+  <select name = "cat[color]">
+  <option value="black" name="cat[color]">Black</option>
+  <option value="white" name="cat[color]">White</option>
+  <option value="orange" name="cat[color]">Orange</option>
+  </select>
+
+  <label for='date'> Date</label>
+  <input id='date' type = "date" name = "cat[birth_date]">
+
+  <label for='description'> Description</label>
+  <textarea rows="4" cols="50" name = "cat[description]">
+
+  </textarea>
+
+
+
+
+
+
+
+  <input type="submit" value="add cat">
+
+</form>
