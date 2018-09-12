@@ -1,0 +1,40 @@
+<%= render 'form', cat: @cat, action: :edit %>
+
+<% action_url = (action == :new) ? users_url : user_url(user) %>
+
+<form action="<%= cats_url %>" method="post">
+  <% if action == :edit %>
+
+    <input type="hidden" name="_method" value="patch">
+    <% else cat = Cat.new %>
+  <% end %>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+
+  <label for='name'> Name</label>
+
+  <input id='name' type = "text" name = "cat[name]" value="<%= @cat.name  %>">
+
+  <label for='sex'> Sex</label>
+  <input type="radio" name="cat[sex]" value="male"> Male
+  <input type="radio" name="cat[sex]" value="female"> Female<br>
+
+
+  <select name = "cat[color]" selected="<%= @cat.color %>">
+  <option value="black" name="cat[color]">Black</option>
+  <option value="white" name="cat[color]">White</option>
+  <option value="orange" name="cat[color]">Orange</option>
+  </select>
+
+  <label for='date'> Date</label>
+  <input id='date' type = "date" name = "cat[birth_date]" value="<%= @cat.birth_date  %>">
+
+  <label for='description'> Description</label>
+  <textarea rows="4" cols="50" name = "cat[description]">
+    <%= @cat.description  %>
+  </textarea>
+
+
+  <input type="submit" value="improve cat">
+
+</form>

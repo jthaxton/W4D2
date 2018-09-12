@@ -1,34 +1,35 @@
-<h1>NEW CAT!!!!</h1>
+<h1>IMPROVED CAT!!!!</h1>
 
-<form action="/cats" method="post" >
+<form action="/cats/<%=@cat.id%>" method="post" >
   <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  <input name="_method" type="hidden" value="patch" />
+
 
 
   <label for='name'> Name</label>
-  <input id='name' type = "text" name = "cat[name]">
+
+  <input id='name' type = "text" name = "cat[name]" value="<%= @cat.name  %>">
 
   <label for='sex'> Sex</label>
   <input type="radio" name="cat[sex]" value="male"> Male
   <input type="radio" name="cat[sex]" value="female"> Female<br>
 
-  <label for="color">Color</label>
-  <select name = "cat[color]">
+
+  <select name = "cat[color]" selected="<%= @cat.color %>">
   <option value="black" name="cat[color]">Black</option>
   <option value="white" name="cat[color]">White</option>
   <option value="orange" name="cat[color]">Orange</option>
   </select>
 
   <label for='date'> Date</label>
-  <input id='date' type = "date" name = "cat[birth_date]">
+  <input id='date' type = "date" name = "cat[birth_date]" value="<%= @cat.birth_date  %>">
 
   <label for='description'> Description</label>
   <textarea rows="4" cols="50" name = "cat[description]">
-
+    <%= @cat.description  %>
   </textarea>
 
 
-
-
-  <input type="submit" value="add cat">
+  <input type="submit" value="improve cat">
 
 </form>

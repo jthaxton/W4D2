@@ -941,3 +941,2356 @@ Processing by CatsController#index as HTML
 Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/cats/edit" for 127.0.0.1 at 2018-09-11 15:12:50 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mCat Load (1.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+Completed 404 Not Found in 200ms (ActiveRecord: 14.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Cat with 'id'=edit:
+  app/controllers/cats_controller.rb:9:in `show'
+
+Started POST "/__better_errors/6e80526cb4670467/variables" for 127.0.0.1 at 2018-09-11 15:12:51 -0700
+Started GET "/cats/edit/6" for 127.0.0.1 at 2018-09-11 15:12:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cats/edit/6"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:13:56 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.7ms)
+
+
+
+NoMethodError - undefined method `value' for #<Cat:0x00007f9767e8c938>
+Did you mean?  validate:
+  app/views/cats/edit.html.erb:8:in `_app_views_cats_edit_html_erb___3612523963723904789_70144130032380'
+  app/controllers/cats_controller.rb:28:in `edit'
+
+Started POST "/__better_errors/0650e7f5b4840b50/variables" for 127.0.0.1 at 2018-09-11 15:13:56 -0700
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:14:49 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:15:46 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 88ms (Views: 83.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:16:58 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 105ms (Views: 102.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:20:22 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (1.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 595ms (Views: 574.4ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mCat Load (0.9ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/cats/10/edit" for 127.0.0.1 at 2018-09-11 15:21:09 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 149ms (Views: 145.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/10/edit" for 127.0.0.1 at 2018-09-11 15:22:28 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCat Load (1.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 587ms (Views: 383.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:23:04 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 186ms (Views: 183.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:25:36 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (1.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:27
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 271ms (Views: 238.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/cats" for 127.0.0.1 at 2018-09-11 15:26:21 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"authenticity_token"=>"a4m7cu2TSv8V36L3yjh5wLGxxuP0fbFDgGH53Vv+t+U8f0r98bihz/a3T+sJvLrnyzDDwr/ycFwg9WS8lS9EPg==", "cat"=>{"name"=>"Franklin", "sex"=>"female", "color"=>"orange", "birth_date"=>"1900-01-09", "description"=>"is dog\r\n  "}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:18
+  [1m[36mCat Create (2.2ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1900-01-09"], ["color", "orange"], ["name", "Franklin"], ["sex", "female"], ["description", "is dog\r\n  "], ["created_at", "2018-09-11 22:26:21.472124"], ["updated_at", "2018-09-11 22:26:21.472124"]]
+  ↳ app/controllers/cats_controller.rb:18
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:18
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 57ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 15:26:21 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 277ms (Views: 274.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:28:50 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+Completed 400 Bad Request in 127ms (ActiveRecord: 11.3ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:29:in `edit'
+
+Started POST "/__better_errors/a467a08ab1950f6d/variables" for 127.0.0.1 at 2018-09-11 15:28:50 -0700
+Started GET "/cats/10/edit" for 127.0.0.1 at 2018-09-11 15:29:52 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.4ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:29:in `edit'
+
+Started POST "/__better_errors/67c38b85d3d102e7/variables" for 127.0.0.1 at 2018-09-11 15:29:52 -0700
+Started POST "/cats" for 127.0.0.1 at 2018-09-11 15:30:00 -0700
+Processing by CatsController#create as HTML
+  Parameters: {"authenticity_token"=>"NpLQJmFVW5saR6E2ak2rHMvk0s0otMT4Oobis2ynLdNhZCGpfX6wq/kvTCqpyWg7sWXX7GM7BeeaEn/SonbeCA==", "cat"=>{"name"=>"jeffrey", "sex"=>"male", "color"=>"black", "birth_date"=>"2015-01-20", "description"=>"    description\r\n  "}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:18
+  [1m[36mCat Create (51.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2015-01-20"], ["color", "black"], ["name", "jeffrey"], ["sex", "male"], ["description", "    description\r\n  "], ["created_at", "2018-09-11 22:30:00.081549"], ["updated_at", "2018-09-11 22:30:00.081549"]]
+  ↳ app/controllers/cats_controller.rb:18
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:18
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 69ms (ActiveRecord: 62.2ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 15:30:00 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 109ms (Views: 107.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:30:09 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.4ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:29:in `edit'
+
+Started POST "/__better_errors/a102e596167cdee0/variables" for 127.0.0.1 at 2018-09-11 15:30:10 -0700
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:32:11 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 400 Bad Request in 48ms (Views: 25.7ms | ActiveRecord: 6.8ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/366c609cd0ccc74d/variables" for 127.0.0.1 at 2018-09-11 15:32:11 -0700
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:32:19 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.4ms)
+Completed 400 Bad Request in 48ms (Views: 24.7ms | ActiveRecord: 7.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/3600b32f8d9458db/variables" for 127.0.0.1 at 2018-09-11 15:32:19 -0700
+Started GET "/cats/6/edit" for 127.0.0.1 at 2018-09-11 15:32:21 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 400 Bad Request in 34ms (Views: 32.1ms | ActiveRecord: 0.3ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/e9692d841e41e8b3/variables" for 127.0.0.1 at 2018-09-11 15:32:21 -0700
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 15:34:41 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:34:45 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 400 Bad Request in 29ms (Views: 26.5ms | ActiveRecord: 0.4ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/4f30d7beed3f38f4/variables" for 127.0.0.1 at 2018-09-11 15:34:45 -0700
+Started GET "/cats/7" for 127.0.0.1 at 2018-09-11 15:35:42 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:9
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:35:46 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.3ms)
+Completed 400 Bad Request in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/da61e95541cc522e/variables" for 127.0.0.1 at 2018-09-11 15:35:46 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:36:24 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 26.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:36:37 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.4ms)
+Completed 400 Bad Request in 52ms (Views: 28.2ms | ActiveRecord: 7.2ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/9c50ac761b5f3c2b/variables" for 127.0.0.1 at 2018-09-11 15:36:37 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:38:29 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 27.5ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:39:30 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (0.8ms)
+Completed 400 Bad Request in 55ms (Views: 33.2ms | ActiveRecord: 7.5ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/fe97a00bed0f910b/variables" for 127.0.0.1 at 2018-09-11 15:39:30 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:43:04 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.1ms)
+Completed 400 Bad Request in 40ms (Views: 36.9ms | ActiveRecord: 0.5ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/b3b2699279f3934d/variables" for 127.0.0.1 at 2018-09-11 15:43:05 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:44:04 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:28
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (0.9ms)
+Completed 400 Bad Request in 27ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:24:in `cat_params'
+  app/controllers/cats_controller.rb:30:in `edit'
+
+Started POST "/__better_errors/9ea4e57e28df269a/variables" for 127.0.0.1 at 2018-09-11 15:44:04 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 15:44:59 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.4ms)
+Completed 400 Bad Request in 58ms (Views: 32.6ms | ActiveRecord: 7.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:31:in `cat_params'
+  app/controllers/cats_controller.rb:25:in `edit'
+
+Started POST "/__better_errors/72f50f645346074b/variables" for 127.0.0.1 at 2018-09-11 15:45:00 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:01:35 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (1.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (0.8ms)
+Completed 400 Bad Request in 30ms (Views: 25.3ms | ActiveRecord: 1.6ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: cat:
+  app/controllers/cats_controller.rb:31:in `cat_params'
+  app/controllers/cats_controller.rb:25:in `edit'
+
+Started POST "/__better_errors/dbca83aa0e773030/variables" for 127.0.0.1 at 2018-09-11 16:01:35 -0700
+Started POST "/__better_errors/dbca83aa0e773030/eval" for 127.0.0.1 at 2018-09-11 16:03:21 -0700
+Started POST "/__better_errors/dbca83aa0e773030/eval" for 127.0.0.1 at 2018-09-11 16:03:40 -0700
+Started POST "/__better_errors/dbca83aa0e773030/variables" for 127.0.0.1 at 2018-09-11 16:17:06 -0700
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 16:17:11 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (1.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 61ms (Views: 46.8ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/cats/7/update" for 127.0.0.1 at 2018-09-11 16:17:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/cats/7/update"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:17:24 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/cats" for 127.0.0.1 at 2018-09-11 16:17:40 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/cats"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/cats" for 127.0.0.1 at 2018-09-11 16:17:48 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/cats"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/cats" for 127.0.0.1 at 2018-09-11 16:20:37 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/cats"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:20:44 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 25.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:20:51 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/cats/" for 127.0.0.1 at 2018-09-11 16:20:59 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/cats"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/cats/" for 127.0.0.1 at 2018-09-11 16:22:01 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/cats"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:22:05 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:22:10 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"cjWiXBS65zOVy0T2WSv6mH/dtReiSjk3Dt92OY3MfVJvov3CktYJmETF8uw/5XHn8RXfikun0LAvsREq82J4dA==", "cat"=>{"name"=>"Franklin", "sex"=>"female", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"dog"}, "id"=>"7"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `update' for nil:NilClass:
+  app/controllers/cats_controller.rb:29:in `update'
+
+Started POST "/__better_errors/3da63ca4b6107a17/variables" for 127.0.0.1 at 2018-09-11 16:22:10 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:22:58 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 25.6ms | ActiveRecord: 7.8ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:23:01 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"qdwpZ8j1zlVcgzMQTyeuf9LloCHezG3O3pjm+v68Bpa0S3b5Tpkg/o2NhQop6SUAXC3KvDchhEn/9oHpgBIDsA==", "cat"=>{"name"=>"Franklin", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"dog  "}, "id"=>"7"}
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (17.4ms)[0m  [1m[33mUPDATE "cats" SET "description" = $1, "color" = $2, "updated_at" = $3 WHERE "cats"."id" = $4[0m  [["description", "dog  "], ["color", "black"], ["updated_at", "2018-09-11 23:23:01.482184"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+No template found for CatsController#update, rendering head :no_content
+Completed 204 No Content in 254ms (ActiveRecord: 19.2ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:23:05 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"qdwpZ8j1zlVcgzMQTyeuf9LloCHezG3O3pjm+v68Bpa0S3b5Tpkg/o2NhQop6SUAXC3KvDchhEn/9oHpgBIDsA==", "cat"=>{"name"=>"Franklin", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"dog  "}, "id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+No template found for CatsController#update, rendering head :no_content
+Completed 204 No Content in 134ms (ActiveRecord: 1.2ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:23:08 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"qdwpZ8j1zlVcgzMQTyeuf9LloCHezG3O3pjm+v68Bpa0S3b5Tpkg/o2NhQop6SUAXC3KvDchhEn/9oHpgBIDsA==", "cat"=>{"name"=>"Franklin", "sex"=>"female", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"dog  "}, "id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (0.6ms)[0m  [1m[33mUPDATE "cats" SET "sex" = $1, "updated_at" = $2 WHERE "cats"."id" = $3[0m  [["sex", "female"], ["updated_at", "2018-09-11 23:23:08.438844"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+No template found for CatsController#update, rendering head :no_content
+Completed 204 No Content in 136ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:23:22 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 23.6ms | ActiveRecord: 8.7ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:23:24 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"5YbfOviDzQMbxIbU3g1v/ooETEDwX3dOB2xdi6VHyB/4EYCkfu8jqMrKMM64w+SBBMwm3RmynskmAjqY2+nNOQ==", "cat"=>{"name"=>"Franklin", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"    dog  \r\n  "}, "id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (0.6ms)[0m  [1m[33mUPDATE "cats" SET "description" = $1, "updated_at" = $2 WHERE "cats"."id" = $3[0m  [["description", "    dog  \r\n  "], ["updated_at", "2018-09-11 23:23:24.440293"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.9ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/cats/index.html.erb:3:in `_app_views_cats_index_html_erb__2798121522071202197_70144160779720'
+  app/controllers/cats_controller.rb:31:in `update'
+
+Started POST "/__better_errors/45895b089b12149f/variables" for 127.0.0.1 at 2018-09-11 16:23:24 -0700
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:23:30 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"5YbfOviDzQMbxIbU3g1v/ooETEDwX3dOB2xdi6VHyB/4EYCkfu8jqMrKMM64w+SBBMwm3RmynskmAjqY2+nNOQ==", "cat"=>{"name"=>"Franklin", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"cat\r\n  "}, "id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (0.6ms)[0m  [1m[33mUPDATE "cats" SET "description" = $1, "updated_at" = $2 WHERE "cats"."id" = $3[0m  [["description", "cat\r\n  "], ["updated_at", "2018-09-11 23:23:30.742960"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+  Rendering cats/index.html.erb within layouts/application
+  Rendered cats/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.9ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/cats/index.html.erb:3:in `_app_views_cats_index_html_erb__2798121522071202197_70144123613680'
+  app/controllers/cats_controller.rb:31:in `update'
+
+Started POST "/__better_errors/d89ad410c3266fb8/variables" for 127.0.0.1 at 2018-09-11 16:23:30 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:23:57 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 25.9ms | ActiveRecord: 7.2ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:24:07 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"hFi1uu/1jBzqb5cD8WtiurXbfDqqgCpZt7l3OdVZNpKZz+okaZlitzthIRmXpenFOxMWp0Ntw96W1xAqq/cztA==", "cat"=>{"name"=>"Franklin", "sex"=>"female", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"dogg\r\n  \r\n  "}, "id"=>"7"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (0.6ms)[0m  [1m[33mUPDATE "cats" SET "description" = $1, "updated_at" = $2 WHERE "cats"."id" = $3[0m  [["description", "dogg\r\n  \r\n  "], ["updated_at", "2018-09-11 23:24:07.393385"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+Redirected to 
+Completed 500 Internal Server Error in 261ms (ActiveRecord: 1.9ms)
+
+
+
+NoMethodError - undefined method `index_url' for #<CatsController:0x00007f9767bf5f30>
+Did you mean?  index:
+  app/controllers/cats_controller.rb:31:in `update'
+
+Started POST "/__better_errors/5884d823dd9311ba/variables" for 127.0.0.1 at 2018-09-11 16:24:07 -0700
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:25:12 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"hFi1uu/1jBzqb5cD8WtiurXbfDqqgCpZt7l3OdVZNpKZz+okaZlitzthIRmXpenFOxMWp0Ntw96W1xAqq/cztA==", "cat"=>{"name"=>"Franklin", "sex"=>"female", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"dogg\r\n  \r\n  s"}, "id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (0.6ms)[0m  [1m[33mUPDATE "cats" SET "description" = $1, "updated_at" = $2 WHERE "cats"."id" = $3[0m  [["description", "dogg\r\n  \r\n  s"], ["updated_at", "2018-09-11 23:25:12.323446"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+Redirected to http://0.0.0.0:3000/cats
+Completed 302 Found in 27ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 16:25:12 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:27:50 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"hFi1uu/1jBzqb5cD8WtiurXbfDqqgCpZt7l3OdVZNpKZz+okaZlitzthIRmXpenFOxMWp0Ntw96W1xAqq/cztA==", "cat"=>{"name"=>"Franklin", "sex"=>"female", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"doggo"}, "id"=>"7"}
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (0.6ms)[0m  [1m[33mUPDATE "cats" SET "description" = $1, "updated_at" = $2 WHERE "cats"."id" = $3[0m  [["description", "doggo"], ["updated_at", "2018-09-11 23:27:50.449220"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+Redirected to http://0.0.0.0:3000/cats
+Completed 302 Found in 24ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 16:27:50 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:51:24 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (2.0ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/edit.html.erb within layouts/application
+  Rendered cats/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/cats/7" for 127.0.0.1 at 2018-09-11 16:51:32 -0700
+Processing by CatsController#update as HTML
+  Parameters: {"authenticity_token"=>"8v31DoUbsZIF5/udNpNfq4YLzgDS1L+rwGCC8UsoBOTvaqqQA3dfOdTpTYdQXdTUCMOknTs5VizhDuXiNYYBwg==", "cat"=>{"name"=>"Franklin", "sex"=>"male", "color"=>"black", "birth_date"=>"1900-01-15", "description"=>"    doggo1\r\n  "}, "id"=>"7"}
+  [1m[36mCat Load (0.8ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[36mCat Update (1.3ms)[0m  [1m[33mUPDATE "cats" SET "sex" = $1, "description" = $2, "updated_at" = $3 WHERE "cats"."id" = $4[0m  [["sex", "male"], ["description", "    doggo1\r\n  "], ["updated_at", "2018-09-11 23:51:32.858372"], ["id", 7]]
+  ↳ app/controllers/cats_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:30
+Redirected to http://0.0.0.0:3000/cats
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2018-09-11 16:51:32 -0700
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (0.7ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:54:22 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/_form.html.erb within layouts/application
+  Rendered cats/_form.html.erb (47.8ms)
+  Rendered cats/_form.html.erb (49.7ms)
+  Rendered cats/_form.html.erb (51.6ms)
+  Rendered cats/_form.html.erb (53.5ms)
+  Rendered cats/_form.html.erb (55.3ms)
+  Rendered cats/_form.html.erb (57.6ms)
+  Rendered cats/_form.html.erb (59.7ms)
+  Rendered cats/_form.html.erb (61.7ms)
+  Rendered cats/_form.html.erb (63.5ms)
+  Rendered cats/_form.html.erb (65.5ms)
+  Rendered cats/_form.html.erb (67.4ms)
+  Rendered cats/_form.html.erb (69.3ms)
+  Rendered cats/_form.html.erb (71.4ms)
+  Rendered cats/_form.html.erb (73.5ms)
+  Rendered cats/_form.html.erb (76.2ms)
+  Rendered cats/_form.html.erb (78.7ms)
+  Rendered cats/_form.html.erb (80.6ms)
+  Rendered cats/_form.html.erb (82.3ms)
+  Rendered cats/_form.html.erb (84.1ms)
+  Rendered cats/_form.html.erb (85.9ms)
+  Rendered cats/_form.html.erb (87.7ms)
+  Rendered cats/_form.html.erb (89.4ms)
+  Rendered cats/_form.html.erb (91.2ms)
+  Rendered cats/_form.html.erb (93.5ms)
+  Rendered cats/_form.html.erb (96.1ms)
+  Rendered cats/_form.html.erb (98.0ms)
+  Rendered cats/_form.html.erb (99.8ms)
+  Rendered cats/_form.html.erb (101.7ms)
+  Rendered cats/_form.html.erb (103.7ms)
+  Rendered cats/_form.html.erb (105.6ms)
+  Rendered cats/_form.html.erb (107.6ms)
+  Rendered cats/_form.html.erb (109.8ms)
+  Rendered cats/_form.html.erb (112.3ms)
+  Rendered cats/_form.html.erb (115.0ms)
+  Rendered cats/_form.html.erb (116.8ms)
+  Rendered cats/_form.html.erb (118.6ms)
+  Rendered cats/_form.html.erb (120.4ms)
+  Rendered cats/_form.html.erb (122.2ms)
+  Rendered cats/_form.html.erb (124.0ms)
+  Rendered cats/_form.html.erb (125.7ms)
+  Rendered cats/_form.html.erb (127.5ms)
+  Rendered cats/_form.html.erb (129.6ms)
+  Rendered cats/_form.html.erb (132.4ms)
+  Rendered cats/_form.html.erb (134.7ms)
+  Rendered cats/_form.html.erb (136.6ms)
+  Rendered cats/_form.html.erb (138.6ms)
+  Rendered cats/_form.html.erb (140.8ms)
+  Rendered cats/_form.html.erb (143.2ms)
+  Rendered cats/_form.html.erb (145.3ms)
+  Rendered cats/_form.html.erb (147.7ms)
+  Rendered cats/_form.html.erb (150.0ms)
+  Rendered cats/_form.html.erb (152.5ms)
+  Rendered cats/_form.html.erb (154.4ms)
+  Rendered cats/_form.html.erb (156.2ms)
+  Rendered cats/_form.html.erb (158.1ms)
+  Rendered cats/_form.html.erb (160.0ms)
+  Rendered cats/_form.html.erb (161.8ms)
+  Rendered cats/_form.html.erb (163.7ms)
+  Rendered cats/_form.html.erb (165.6ms)
+  Rendered cats/_form.html.erb (167.7ms)
+  Rendered cats/_form.html.erb (170.2ms)
+  Rendered cats/_form.html.erb (172.5ms)
+  Rendered cats/_form.html.erb (174.2ms)
+  Rendered cats/_form.html.erb (176.0ms)
+  Rendered cats/_form.html.erb (177.8ms)
+  Rendered cats/_form.html.erb (179.6ms)
+  Rendered cats/_form.html.erb (181.4ms)
+  Rendered cats/_form.html.erb (183.2ms)
+  Rendered cats/_form.html.erb (185.6ms)
+  Rendered cats/_form.html.erb (188.0ms)
+  Rendered cats/_form.html.erb (189.8ms)
+  Rendered cats/_form.html.erb (191.6ms)
+  Rendered cats/_form.html.erb (193.5ms)
+  Rendered cats/_form.html.erb (195.4ms)
+  Rendered cats/_form.html.erb (197.4ms)
+  Rendered cats/_form.html.erb (199.5ms)
+  Rendered cats/_form.html.erb (201.8ms)
+  Rendered cats/_form.html.erb (204.4ms)
+  Rendered cats/_form.html.erb (206.9ms)
+  Rendered cats/_form.html.erb (208.7ms)
+  Rendered cats/_form.html.erb (210.4ms)
+  Rendered cats/_form.html.erb (212.3ms)
+  Rendered cats/_form.html.erb (214.0ms)
+  Rendered cats/_form.html.erb (215.8ms)
+  Rendered cats/_form.html.erb (217.6ms)
+  Rendered cats/_form.html.erb (219.3ms)
+  Rendered cats/_form.html.erb (221.6ms)
+  Rendered cats/_form.html.erb (223.5ms)
+  Rendered cats/_form.html.erb (225.4ms)
+  Rendered cats/_form.html.erb (227.1ms)
+  Rendered cats/_form.html.erb (228.9ms)
+  Rendered cats/_form.html.erb (230.8ms)
+  Rendered cats/_form.html.erb (232.5ms)
+  Rendered cats/_form.html.erb (234.3ms)
+  Rendered cats/_form.html.erb (236.1ms)
+  Rendered cats/_form.html.erb (238.0ms)
+  Rendered cats/_form.html.erb (240.2ms)
+  Rendered cats/_form.html.erb (242.2ms)
+  Rendered cats/_form.html.erb (244.1ms)
+  Rendered cats/_form.html.erb (246.0ms)
+  Rendered cats/_form.html.erb (247.9ms)
+  Rendered cats/_form.html.erb (249.9ms)
+  Rendered cats/_form.html.erb (251.9ms)
+  Rendered cats/_form.html.erb (254.1ms)
+  Rendered cats/_form.html.erb (256.4ms)
+  Rendered cats/_form.html.erb (259.2ms)
+  Rendered cats/_form.html.erb (261.9ms)
+  Rendered cats/_form.html.erb (264.9ms)
+  Rendered cats/_form.html.erb (267.1ms)
+  Rendered cats/_form.html.erb (269.1ms)
+  Rendered cats/_form.html.erb (271.2ms)
+  Rendered cats/_form.html.erb (273.4ms)
+  Rendered cats/_form.html.erb (275.9ms)
+  Rendered cats/_form.html.erb (278.5ms)
+  Rendered cats/_form.html.erb (280.5ms)
+  Rendered cats/_form.html.erb (282.3ms)
+  Rendered cats/_form.html.erb (284.0ms)
+  Rendered cats/_form.html.erb (285.8ms)
+  Rendered cats/_form.html.erb (287.6ms)
+  Rendered cats/_form.html.erb (289.5ms)
+  Rendered cats/_form.html.erb (291.6ms)
+  Rendered cats/_form.html.erb (294.3ms)
+  Rendered cats/_form.html.erb (296.7ms)
+  Rendered cats/_form.html.erb (298.7ms)
+  Rendered cats/_form.html.erb (300.4ms)
+  Rendered cats/_form.html.erb (302.2ms)
+  Rendered cats/_form.html.erb (303.9ms)
+  Rendered cats/_form.html.erb (305.8ms)
+  Rendered cats/_form.html.erb (307.5ms)
+  Rendered cats/_form.html.erb (309.3ms)
+  Rendered cats/_form.html.erb (311.1ms)
+  Rendered cats/_form.html.erb (313.3ms)
+  Rendered cats/_form.html.erb (315.2ms)
+  Rendered cats/_form.html.erb (317.0ms)
+  Rendered cats/_form.html.erb (318.8ms)
+  Rendered cats/_form.html.erb (320.8ms)
+  Rendered cats/_form.html.erb (322.7ms)
+  Rendered cats/_form.html.erb (324.6ms)
+  Rendered cats/_form.html.erb (326.8ms)
+  Rendered cats/_form.html.erb (329.1ms)
+  Rendered cats/_form.html.erb (331.7ms)
+  Rendered cats/_form.html.erb (334.2ms)
+  Rendered cats/_form.html.erb (335.9ms)
+  Rendered cats/_form.html.erb (337.7ms)
+  Rendered cats/_form.html.erb (339.6ms)
+  Rendered cats/_form.html.erb (341.4ms)
+  Rendered cats/_form.html.erb (343.2ms)
+  Rendered cats/_form.html.erb (345.0ms)
+  Rendered cats/_form.html.erb (346.9ms)
+  Rendered cats/_form.html.erb (349.3ms)
+  Rendered cats/_form.html.erb (351.3ms)
+  Rendered cats/_form.html.erb (353.3ms)
+  Rendered cats/_form.html.erb (355.1ms)
+  Rendered cats/_form.html.erb (357.1ms)
+  Rendered cats/_form.html.erb (359.1ms)
+  Rendered cats/_form.html.erb (361.1ms)
+  Rendered cats/_form.html.erb (363.2ms)
+  Rendered cats/_form.html.erb (365.5ms)
+  Rendered cats/_form.html.erb (368.7ms)
+  Rendered cats/_form.html.erb (371.2ms)
+  Rendered cats/_form.html.erb (373.0ms)
+  Rendered cats/_form.html.erb (374.9ms)
+  Rendered cats/_form.html.erb (376.8ms)
+  Rendered cats/_form.html.erb (378.9ms)
+  Rendered cats/_form.html.erb (382.3ms)
+  Rendered cats/_form.html.erb (385.6ms)
+  Rendered cats/_form.html.erb (388.0ms)
+  Rendered cats/_form.html.erb (390.1ms)
+  Rendered cats/_form.html.erb (391.9ms)
+  Rendered cats/_form.html.erb (393.7ms)
+  Rendered cats/_form.html.erb (395.5ms)
+  Rendered cats/_form.html.erb (397.4ms)
+  Rendered cats/_form.html.erb (399.2ms)
+  Rendered cats/_form.html.erb (400.9ms)
+  Rendered cats/_form.html.erb (402.8ms)
+  Rendered cats/_form.html.erb (405.8ms)
+  Rendered cats/_form.html.erb (407.8ms)
+  Rendered cats/_form.html.erb (409.6ms)
+  Rendered cats/_form.html.erb (411.5ms)
+  Rendered cats/_form.html.erb (413.5ms)
+  Rendered cats/_form.html.erb (415.4ms)
+  Rendered cats/_form.html.erb (417.4ms)
+  Rendered cats/_form.html.erb (419.6ms)
+  Rendered cats/_form.html.erb (422.2ms)
+  Rendered cats/_form.html.erb (424.8ms)
+  Rendered cats/_form.html.erb (426.6ms)
+  Rendered cats/_form.html.erb (428.4ms)
+  Rendered cats/_form.html.erb (430.2ms)
+  Rendered cats/_form.html.erb (431.9ms)
+  Rendered cats/_form.html.erb (433.7ms)
+  Rendered cats/_form.html.erb (435.5ms)
+  Rendered cats/_form.html.erb (437.3ms)
+  Rendered cats/_form.html.erb (439.2ms)
+  Rendered cats/_form.html.erb (441.1ms)
+  Rendered cats/_form.html.erb (443.2ms)
+  Rendered cats/_form.html.erb (445.8ms)
+  Rendered cats/_form.html.erb (447.5ms)
+  Rendered cats/_form.html.erb (449.3ms)
+  Rendered cats/_form.html.erb (451.1ms)
+  Rendered cats/_form.html.erb (452.9ms)
+  Rendered cats/_form.html.erb (454.7ms)
+  Rendered cats/_form.html.erb (456.5ms)
+  Rendered cats/_form.html.erb (458.8ms)
+  Rendered cats/_form.html.erb (460.9ms)
+  Rendered cats/_form.html.erb (462.9ms)
+  Rendered cats/_form.html.erb (464.8ms)
+  Rendered cats/_form.html.erb (466.6ms)
+  Rendered cats/_form.html.erb (468.4ms)
+  Rendered cats/_form.html.erb (470.2ms)
+  Rendered cats/_form.html.erb (472.2ms)
+  Rendered cats/_form.html.erb (474.1ms)
+  Rendered cats/_form.html.erb (476.1ms)
+  Rendered cats/_form.html.erb (478.7ms)
+  Rendered cats/_form.html.erb (481.2ms)
+  Rendered cats/_form.html.erb (483.7ms)
+  Rendered cats/_form.html.erb (486.9ms)
+  Rendered cats/_form.html.erb (489.0ms)
+  Rendered cats/_form.html.erb (491.2ms)
+  Rendered cats/_form.html.erb (493.4ms)
+  Rendered cats/_form.html.erb (496.2ms)
+  Rendered cats/_form.html.erb (499.0ms)
+  Rendered cats/_form.html.erb (500.7ms)
+  Rendered cats/_form.html.erb (502.5ms)
+  Rendered cats/_form.html.erb (504.3ms)
+  Rendered cats/_form.html.erb (506.1ms)
+  Rendered cats/_form.html.erb (507.9ms)
+  Rendered cats/_form.html.erb (509.7ms)
+  Rendered cats/_form.html.erb (511.6ms)
+  Rendered cats/_form.html.erb (513.7ms)
+  Rendered cats/_form.html.erb (515.7ms)
+  Rendered cats/_form.html.erb (517.5ms)
+  Rendered cats/_form.html.erb (519.3ms)
+  Rendered cats/_form.html.erb (521.3ms)
+  Rendered cats/_form.html.erb (523.1ms)
+  Rendered cats/_form.html.erb (525.1ms)
+  Rendered cats/_form.html.erb (527.2ms)
+  Rendered cats/_form.html.erb (529.5ms)
+  Rendered cats/_form.html.erb (532.3ms)
+  Rendered cats/_form.html.erb (534.8ms)
+  Rendered cats/_form.html.erb (536.5ms)
+  Rendered cats/_form.html.erb (538.2ms)
+  Rendered cats/_form.html.erb (540.0ms)
+  Rendered cats/_form.html.erb (541.8ms)
+  Rendered cats/_form.html.erb (543.7ms)
+  Rendered cats/_form.html.erb (545.8ms)
+  Rendered cats/_form.html.erb (547.6ms)
+  Rendered cats/_form.html.erb (549.9ms)
+  Rendered cats/_form.html.erb (551.9ms)
+  Rendered cats/_form.html.erb (553.9ms)
+  Rendered cats/_form.html.erb (555.7ms)
+  Rendered cats/_form.html.erb (557.5ms)
+  Rendered cats/_form.html.erb (559.3ms)
+  Rendered cats/_form.html.erb (562.1ms)
+  Rendered cats/_form.html.erb (564.0ms)
+  Rendered cats/_form.html.erb (565.7ms)
+  Rendered cats/_form.html.erb (567.5ms)
+  Rendered cats/_form.html.erb (569.9ms)
+  Rendered cats/_form.html.erb (571.9ms)
+  Rendered cats/_form.html.erb (573.7ms)
+  Rendered cats/_form.html.erb (575.5ms)
+  Rendered cats/_form.html.erb (578.2ms)
+  Rendered cats/_form.html.erb (580.8ms)
+  Rendered cats/_form.html.erb (582.6ms)
+  Rendered cats/_form.html.erb (584.4ms)
+  Rendered cats/_form.html.erb (586.2ms)
+  Rendered cats/_form.html.erb (588.8ms)
+  Rendered cats/_form.html.erb (591.2ms)
+  Rendered cats/_form.html.erb (593.3ms)
+  Rendered cats/_form.html.erb (595.2ms)
+  Rendered cats/_form.html.erb (597.2ms)
+  Rendered cats/_form.html.erb (598.9ms)
+  Rendered cats/_form.html.erb (600.8ms)
+  Rendered cats/_form.html.erb (602.5ms)
+  Rendered cats/_form.html.erb (604.3ms)
+  Rendered cats/_form.html.erb (606.9ms)
+  Rendered cats/_form.html.erb (608.8ms)
+  Rendered cats/_form.html.erb (610.6ms)
+  Rendered cats/_form.html.erb (612.5ms)
+  Rendered cats/_form.html.erb (614.6ms)
+  Rendered cats/_form.html.erb (616.6ms)
+  Rendered cats/_form.html.erb (618.6ms)
+  Rendered cats/_form.html.erb (620.7ms)
+  Rendered cats/_form.html.erb (623.7ms)
+  Rendered cats/_form.html.erb (625.6ms)
+  Rendered cats/_form.html.erb (628.1ms)
+  Rendered cats/_form.html.erb (630.3ms)
+  Rendered cats/_form.html.erb (632.1ms)
+  Rendered cats/_form.html.erb (633.8ms)
+  Rendered cats/_form.html.erb (635.5ms)
+  Rendered cats/_form.html.erb (637.4ms)
+  Rendered cats/_form.html.erb (639.3ms)
+  Rendered cats/_form.html.erb (641.1ms)
+  Rendered cats/_form.html.erb (643.4ms)
+  Rendered cats/_form.html.erb (645.4ms)
+  Rendered cats/_form.html.erb (647.3ms)
+  Rendered cats/_form.html.erb (649.5ms)
+  Rendered cats/_form.html.erb (651.5ms)
+  Rendered cats/_form.html.erb (653.4ms)
+  Rendered cats/_form.html.erb (655.4ms)
+  Rendered cats/_form.html.erb (657.7ms)
+  Rendered cats/_form.html.erb (660.3ms)
+  Rendered cats/_form.html.erb (662.5ms)
+  Rendered cats/_form.html.erb (664.7ms)
+  Rendered cats/_form.html.erb (666.4ms)
+  Rendered cats/_form.html.erb (668.2ms)
+  Rendered cats/_form.html.erb (670.0ms)
+  Rendered cats/_form.html.erb (671.7ms)
+  Rendered cats/_form.html.erb (673.5ms)
+  Rendered cats/_form.html.erb (675.5ms)
+  Rendered cats/_form.html.erb (678.2ms)
+  Rendered cats/_form.html.erb (682.1ms)
+  Rendered cats/_form.html.erb (684.0ms)
+  Rendered cats/_form.html.erb (685.9ms)
+  Rendered cats/_form.html.erb (688.3ms)
+  Rendered cats/_form.html.erb (690.4ms)
+  Rendered cats/_form.html.erb (692.6ms)
+  Rendered cats/_form.html.erb (695.9ms)
+  Rendered cats/_form.html.erb (698.1ms)
+  Rendered cats/_form.html.erb (700.0ms)
+  Rendered cats/_form.html.erb (702.0ms)
+  Rendered cats/_form.html.erb (704.0ms)
+  Rendered cats/_form.html.erb (706.6ms)
+  Rendered cats/_form.html.erb (708.8ms)
+  Rendered cats/_form.html.erb (710.7ms)
+  Rendered cats/_form.html.erb (713.0ms)
+  Rendered cats/_form.html.erb (715.3ms)
+  Rendered cats/_form.html.erb (717.9ms)
+  Rendered cats/_form.html.erb (720.9ms)
+  Rendered cats/_form.html.erb (722.7ms)
+  Rendered cats/_form.html.erb (724.4ms)
+  Rendered cats/_form.html.erb (726.2ms)
+  Rendered cats/_form.html.erb (728.0ms)
+  Rendered cats/_form.html.erb (729.9ms)
+  Rendered cats/_form.html.erb (732.1ms)
+  Rendered cats/_form.html.erb (734.3ms)
+  Rendered cats/_form.html.erb (736.9ms)
+  Rendered cats/_form.html.erb (738.7ms)
+  Rendered cats/_form.html.erb (740.8ms)
+  Rendered cats/_form.html.erb (742.7ms)
+  Rendered cats/_form.html.erb (744.7ms)
+  Rendered cats/_form.html.erb (746.5ms)
+  Rendered cats/_form.html.erb (748.4ms)
+  Rendered cats/_form.html.erb (750.4ms)
+  Rendered cats/_form.html.erb (753.3ms)
+  Rendered cats/_form.html.erb (756.2ms)
+  Rendered cats/_form.html.erb (758.1ms)
+  Rendered cats/_form.html.erb (760.0ms)
+  Rendered cats/_form.html.erb (762.0ms)
+  Rendered cats/_form.html.erb (763.8ms)
+  Rendered cats/_form.html.erb (765.5ms)
+  Rendered cats/_form.html.erb (767.5ms)
+  Rendered cats/_form.html.erb (769.3ms)
+  Rendered cats/_form.html.erb (771.7ms)
+  Rendered cats/_form.html.erb (773.8ms)
+  Rendered cats/_form.html.erb (775.7ms)
+  Rendered cats/_form.html.erb (777.5ms)
+  Rendered cats/_form.html.erb (779.3ms)
+  Rendered cats/_form.html.erb (781.1ms)
+  Rendered cats/_form.html.erb (782.9ms)
+  Rendered cats/_form.html.erb (784.8ms)
+  Rendered cats/_form.html.erb (787.2ms)
+  Rendered cats/_form.html.erb (790.0ms)
+  Rendered cats/_form.html.erb (792.6ms)
+  Rendered cats/_form.html.erb (794.4ms)
+  Rendered cats/_form.html.erb (796.1ms)
+  Rendered cats/_form.html.erb (797.9ms)
+  Rendered cats/_form.html.erb (799.7ms)
+  Rendered cats/_form.html.erb (801.5ms)
+  Rendered cats/_form.html.erb (803.8ms)
+  Rendered cats/_form.html.erb (806.3ms)
+  Rendered cats/_form.html.erb (808.5ms)
+  Rendered cats/_form.html.erb (811.0ms)
+  Rendered cats/_form.html.erb (812.7ms)
+  Rendered cats/_form.html.erb (814.5ms)
+  Rendered cats/_form.html.erb (816.3ms)
+  Rendered cats/_form.html.erb (818.2ms)
+  Rendered cats/_form.html.erb (820.7ms)
+  Rendered cats/_form.html.erb (822.7ms)
+  Rendered cats/_form.html.erb (824.7ms)
+  Rendered cats/_form.html.erb (826.9ms)
+  Rendered cats/_form.html.erb (828.8ms)
+  Rendered cats/_form.html.erb (830.7ms)
+  Rendered cats/_form.html.erb (832.5ms)
+  Rendered cats/_form.html.erb (834.3ms)
+  Rendered cats/_form.html.erb (836.2ms)
+  Rendered cats/_form.html.erb (838.1ms)
+  Rendered cats/_form.html.erb (840.1ms)
+  Rendered cats/_form.html.erb (842.2ms)
+  Rendered cats/_form.html.erb (845.2ms)
+  Rendered cats/_form.html.erb (847.8ms)
+  Rendered cats/_form.html.erb (850.1ms)
+  Rendered cats/_form.html.erb (852.9ms)
+  Rendered cats/_form.html.erb (855.4ms)
+  Rendered cats/_form.html.erb (857.2ms)
+  Rendered cats/_form.html.erb (859.1ms)
+  Rendered cats/_form.html.erb (861.3ms)
+  Rendered cats/_form.html.erb (863.3ms)
+  Rendered cats/_form.html.erb (865.3ms)
+  Rendered cats/_form.html.erb (867.0ms)
+  Rendered cats/_form.html.erb (868.7ms)
+  Rendered cats/_form.html.erb (870.4ms)
+  Rendered cats/_form.html.erb (872.3ms)
+  Rendered cats/_form.html.erb (874.2ms)
+  Rendered cats/_form.html.erb (876.1ms)
+  Rendered cats/_form.html.erb (878.2ms)
+  Rendered cats/_form.html.erb (880.4ms)
+  Rendered cats/_form.html.erb (882.7ms)
+  Rendered cats/_form.html.erb (884.9ms)
+  Rendered cats/_form.html.erb (887.4ms)
+  Rendered cats/_form.html.erb (890.6ms)
+  Rendered cats/_form.html.erb (892.3ms)
+  Rendered cats/_form.html.erb (894.1ms)
+  Rendered cats/_form.html.erb (896.2ms)
+  Rendered cats/_form.html.erb (898.2ms)
+  Rendered cats/_form.html.erb (900.2ms)
+  Rendered cats/_form.html.erb (902.0ms)
+  Rendered cats/_form.html.erb (903.8ms)
+  Rendered cats/_form.html.erb (905.7ms)
+  Rendered cats/_form.html.erb (907.6ms)
+  Rendered cats/_form.html.erb (909.4ms)
+  Rendered cats/_form.html.erb (911.4ms)
+  Rendered cats/_form.html.erb (913.3ms)
+  Rendered cats/_form.html.erb (915.2ms)
+  Rendered cats/_form.html.erb (917.4ms)
+  Rendered cats/_form.html.erb (919.4ms)
+  Rendered cats/_form.html.erb (921.3ms)
+  Rendered cats/_form.html.erb (923.3ms)
+  Rendered cats/_form.html.erb (925.3ms)
+  Rendered cats/_form.html.erb (927.3ms)
+  Rendered cats/_form.html.erb (929.7ms)
+  Rendered cats/_form.html.erb (931.9ms)
+  Rendered cats/_form.html.erb (934.8ms)
+  Rendered cats/_form.html.erb (937.3ms)
+  Rendered cats/_form.html.erb (940.4ms)
+  Rendered cats/_form.html.erb (942.4ms)
+  Rendered cats/_form.html.erb (944.2ms)
+  Rendered cats/_form.html.erb (946.0ms)
+  Rendered cats/_form.html.erb (947.7ms)
+  Rendered cats/_form.html.erb (949.6ms)
+  Rendered cats/_form.html.erb (951.4ms)
+  Rendered cats/_form.html.erb (954.0ms)
+  Rendered cats/_form.html.erb (956.6ms)
+  Rendered cats/_form.html.erb (959.4ms)
+  Rendered cats/_form.html.erb (962.6ms)
+  Rendered cats/_form.html.erb (964.5ms)
+  Rendered cats/_form.html.erb (966.3ms)
+  Rendered cats/_form.html.erb (968.1ms)
+  Rendered cats/_form.html.erb (969.9ms)
+  Rendered cats/_form.html.erb (972.2ms)
+  Rendered cats/_form.html.erb (974.6ms)
+  Rendered cats/_form.html.erb (976.9ms)
+  Rendered cats/_form.html.erb (978.7ms)
+  Rendered cats/_form.html.erb (980.4ms)
+  Rendered cats/_form.html.erb (982.3ms)
+  Rendered cats/_form.html.erb (984.1ms)
+  Rendered cats/_form.html.erb (985.8ms)
+  Rendered cats/_form.html.erb (987.7ms)
+  Rendered cats/_form.html.erb (990.0ms)
+  Rendered cats/_form.html.erb (992.7ms)
+  Rendered cats/_form.html.erb (995.2ms)
+  Rendered cats/_form.html.erb (997.2ms)
+  Rendered cats/_form.html.erb (999.3ms)
+  Rendered cats/_form.html.erb (1001.5ms)
+  Rendered cats/_form.html.erb (1003.9ms)
+  Rendered cats/_form.html.erb (1006.3ms)
+  Rendered cats/_form.html.erb (1008.2ms)
+  Rendered cats/_form.html.erb (1010.4ms)
+  Rendered cats/_form.html.erb (1013.5ms)
+  Rendered cats/_form.html.erb (1015.5ms)
+  Rendered cats/_form.html.erb (1017.3ms)
+  Rendered cats/_form.html.erb (1019.1ms)
+  Rendered cats/_form.html.erb (1020.9ms)
+  Rendered cats/_form.html.erb (1022.7ms)
+  Rendered cats/_form.html.erb (1024.5ms)
+  Rendered cats/_form.html.erb (1026.2ms)
+  Rendered cats/_form.html.erb (1028.1ms)
+  Rendered cats/_form.html.erb (1030.2ms)
+  Rendered cats/_form.html.erb (1032.5ms)
+  Rendered cats/_form.html.erb (1034.4ms)
+  Rendered cats/_form.html.erb (1036.3ms)
+  Rendered cats/_form.html.erb (1038.0ms)
+  Rendered cats/_form.html.erb (1040.6ms)
+  Rendered cats/_form.html.erb (1042.6ms)
+  Rendered cats/_form.html.erb (1044.5ms)
+  Rendered cats/_form.html.erb (1046.5ms)
+  Rendered cats/_form.html.erb (1049.1ms)
+  Rendered cats/_form.html.erb (1051.3ms)
+  Rendered cats/_form.html.erb (1053.4ms)
+  Rendered cats/_form.html.erb (1055.4ms)
+  Rendered cats/_form.html.erb (1057.3ms)
+  Rendered cats/_form.html.erb (1059.2ms)
+  Rendered cats/_form.html.erb (1061.2ms)
+  Rendered cats/_form.html.erb (1063.2ms)
+  Rendered cats/_form.html.erb (1066.1ms)
+  Rendered cats/_form.html.erb (1068.7ms)
+  Rendered cats/_form.html.erb (1071.3ms)
+  Rendered cats/_form.html.erb (1074.5ms)
+  Rendered cats/_form.html.erb (1077.6ms)
+  Rendered cats/_form.html.erb (1079.9ms)
+  Rendered cats/_form.html.erb (1082.5ms)
+  Rendered cats/_form.html.erb (1085.4ms)
+  Rendered cats/_form.html.erb (1087.4ms)
+  Rendered cats/_form.html.erb (1089.3ms)
+  Rendered cats/_form.html.erb (1091.2ms)
+  Rendered cats/_form.html.erb (1093.1ms)
+  Rendered cats/_form.html.erb (1094.9ms)
+  Rendered cats/_form.html.erb (1096.9ms)
+  Rendered cats/_form.html.erb (1098.6ms)
+  Rendered cats/_form.html.erb (1100.7ms)
+  Rendered cats/_form.html.erb (1102.6ms)
+  Rendered cats/_form.html.erb (1105.6ms)
+  Rendered cats/_form.html.erb (1107.4ms)
+  Rendered cats/_form.html.erb (1109.2ms)
+  Rendered cats/_form.html.erb (1111.1ms)
+  Rendered cats/_form.html.erb (1113.0ms)
+  Rendered cats/_form.html.erb (1114.9ms)
+  Rendered cats/_form.html.erb (1116.9ms)
+  Rendered cats/_form.html.erb (1119.0ms)
+  Rendered cats/_form.html.erb (1121.6ms)
+  Rendered cats/_form.html.erb (1123.9ms)
+  Rendered cats/_form.html.erb (1126.4ms)
+  Rendered cats/_form.html.erb (1128.3ms)
+  Rendered cats/_form.html.erb (1130.5ms)
+  Rendered cats/_form.html.erb (1132.3ms)
+  Rendered cats/_form.html.erb (1134.1ms)
+  Rendered cats/_form.html.erb (1135.8ms)
+  Rendered cats/_form.html.erb (1137.7ms)
+  Rendered cats/_form.html.erb (1139.7ms)
+  Rendered cats/_form.html.erb (1142.2ms)
+  Rendered cats/_form.html.erb (1143.9ms)
+  Rendered cats/_form.html.erb (1145.8ms)
+  Rendered cats/_form.html.erb (1147.5ms)
+  Rendered cats/_form.html.erb (1149.3ms)
+  Rendered cats/_form.html.erb (1151.1ms)
+  Rendered cats/_form.html.erb (1152.8ms)
+  Rendered cats/_form.html.erb (1155.2ms)
+  Rendered cats/_form.html.erb (1157.0ms)
+  Rendered cats/_form.html.erb (1158.8ms)
+  Rendered cats/_form.html.erb (1161.8ms)
+  Rendered cats/_form.html.erb (1164.4ms)
+  Rendered cats/_form.html.erb (1166.1ms)
+  Rendered cats/_form.html.erb (1167.9ms)
+  Rendered cats/_form.html.erb (1169.6ms)
+  Rendered cats/_form.html.erb (1171.4ms)
+  Rendered cats/_form.html.erb (1173.1ms)
+  Rendered cats/_form.html.erb (1174.9ms)
+  Rendered cats/_form.html.erb (1176.7ms)
+  Rendered cats/_form.html.erb (1179.0ms)
+  Rendered cats/_form.html.erb (1180.8ms)
+  Rendered cats/_form.html.erb (1183.1ms)
+  Rendered cats/_form.html.erb (1184.9ms)
+  Rendered cats/_form.html.erb (1186.7ms)
+  Rendered cats/_form.html.erb (1188.5ms)
+  Rendered cats/_form.html.erb (1190.3ms)
+  Rendered cats/_form.html.erb (1192.1ms)
+  Rendered cats/_form.html.erb (1193.9ms)
+  Rendered cats/_form.html.erb (1196.3ms)
+  Rendered cats/_form.html.erb (1199.0ms)
+  Rendered cats/_form.html.erb (1201.3ms)
+  Rendered cats/_form.html.erb (1204.1ms)
+  Rendered cats/_form.html.erb (1206.0ms)
+  Rendered cats/_form.html.erb (1207.7ms)
+  Rendered cats/_form.html.erb (1209.8ms)
+  Rendered cats/_form.html.erb (1211.8ms)
+  Rendered cats/_form.html.erb (1213.8ms)
+  Rendered cats/_form.html.erb (1216.4ms)
+  Rendered cats/_form.html.erb (1218.6ms)
+  Rendered cats/_form.html.erb (1221.0ms)
+  Rendered cats/_form.html.erb (1223.8ms)
+  Rendered cats/_form.html.erb (1226.8ms)
+  Rendered cats/_form.html.erb (1228.7ms)
+  Rendered cats/_form.html.erb (1230.5ms)
+  Rendered cats/_form.html.erb (1232.6ms)
+  Rendered cats/_form.html.erb (1235.1ms)
+  Rendered cats/_form.html.erb (1237.7ms)
+  Rendered cats/_form.html.erb (1239.4ms)
+  Rendered cats/_form.html.erb (1241.3ms)
+  Rendered cats/_form.html.erb (1243.3ms)
+  Rendered cats/_form.html.erb (1245.2ms)
+  Rendered cats/_form.html.erb (1247.5ms)
+  Rendered cats/_form.html.erb (1250.4ms)
+  Rendered cats/_form.html.erb (1252.3ms)
+  Rendered cats/_form.html.erb (1254.3ms)
+  Rendered cats/_form.html.erb (1256.1ms)
+  Rendered cats/_form.html.erb (1257.8ms)
+  Rendered cats/_form.html.erb (1259.6ms)
+  Rendered cats/_form.html.erb (1261.3ms)
+  Rendered cats/_form.html.erb (1263.1ms)
+  Rendered cats/_form.html.erb (1264.9ms)
+  Rendered cats/_form.html.erb (1266.7ms)
+  Rendered cats/_form.html.erb (1269.1ms)
+  Rendered cats/_form.html.erb (1272.4ms)
+  Rendered cats/_form.html.erb (1275.1ms)
+  Rendered cats/_form.html.erb (1277.4ms)
+  Rendered cats/_form.html.erb (1279.9ms)
+  Rendered cats/_form.html.erb (1282.4ms)
+  Rendered cats/_form.html.erb (1284.5ms)
+  Rendered cats/_form.html.erb (1286.9ms)
+  Rendered cats/_form.html.erb (1290.2ms)
+  Rendered cats/_form.html.erb (1292.4ms)
+  Rendered cats/_form.html.erb (1294.2ms)
+  Rendered cats/_form.html.erb (1295.9ms)
+  Rendered cats/_form.html.erb (1297.6ms)
+  Rendered cats/_form.html.erb (1299.4ms)
+  Rendered cats/_form.html.erb (1301.1ms)
+  Rendered cats/_form.html.erb (1302.9ms)
+  Rendered cats/_form.html.erb (1305.4ms)
+  Rendered cats/_form.html.erb (1307.7ms)
+  Rendered cats/_form.html.erb (1310.0ms)
+  Rendered cats/_form.html.erb (1311.9ms)
+  Rendered cats/_form.html.erb (1313.8ms)
+  Rendered cats/_form.html.erb (1315.9ms)
+  Rendered cats/_form.html.erb (1317.7ms)
+  Rendered cats/_form.html.erb (1319.6ms)
+  Rendered cats/_form.html.erb (1321.8ms)
+  Rendered cats/_form.html.erb (1324.2ms)
+  Rendered cats/_form.html.erb (1327.0ms)
+  Rendered cats/_form.html.erb (1329.6ms)
+  Rendered cats/_form.html.erb (1332.0ms)
+  Rendered cats/_form.html.erb (1333.9ms)
+  Rendered cats/_form.html.erb (1335.7ms)
+  Rendered cats/_form.html.erb (1337.6ms)
+  Rendered cats/_form.html.erb (1339.7ms)
+  Rendered cats/_form.html.erb (1341.7ms)
+  Rendered cats/_form.html.erb (1343.9ms)
+  Rendered cats/_form.html.erb (1346.3ms)
+  Rendered cats/_form.html.erb (1348.3ms)
+  Rendered cats/_form.html.erb (1351.2ms)
+  Rendered cats/_form.html.erb (1353.5ms)
+  Rendered cats/_form.html.erb (1355.2ms)
+  Rendered cats/_form.html.erb (1357.7ms)
+  Rendered cats/_form.html.erb (1359.5ms)
+  Rendered cats/_form.html.erb (1361.5ms)
+  Rendered cats/_form.html.erb (1364.2ms)
+  Rendered cats/_form.html.erb (1366.0ms)
+  Rendered cats/_form.html.erb (1367.9ms)
+  Rendered cats/_form.html.erb (1369.6ms)
+  Rendered cats/_form.html.erb (1371.4ms)
+  Rendered cats/_form.html.erb (1373.2ms)
+  Rendered cats/_form.html.erb (1374.9ms)
+  Rendered cats/_form.html.erb (1376.6ms)
+  Rendered cats/_form.html.erb (1378.5ms)
+  Rendered cats/_form.html.erb (1380.6ms)
+  Rendered cats/_form.html.erb (1384.1ms)
+  Rendered cats/_form.html.erb (1386.4ms)
+  Rendered cats/_form.html.erb (1388.4ms)
+  Rendered cats/_form.html.erb (1390.5ms)
+  Rendered cats/_form.html.erb (1392.6ms)
+  Rendered cats/_form.html.erb (1394.7ms)
+  Rendered cats/_form.html.erb (1396.8ms)
+  Rendered cats/_form.html.erb (1399.3ms)
+  Rendered cats/_form.html.erb (1401.8ms)
+  Rendered cats/_form.html.erb (1403.6ms)
+  Rendered cats/_form.html.erb (1405.4ms)
+  Rendered cats/_form.html.erb (1407.1ms)
+  Rendered cats/_form.html.erb (1408.8ms)
+  Rendered cats/_form.html.erb (1410.5ms)
+  Rendered cats/_form.html.erb (1412.9ms)
+  Rendered cats/_form.html.erb (1414.6ms)
+  Rendered cats/_form.html.erb (1416.4ms)
+  Rendered cats/_form.html.erb (1418.3ms)
+  Rendered cats/_form.html.erb (1420.9ms)
+  Rendered cats/_form.html.erb (1423.5ms)
+  Rendered cats/_form.html.erb (1425.3ms)
+  Rendered cats/_form.html.erb (1427.0ms)
+  Rendered cats/_form.html.erb (1428.8ms)
+  Rendered cats/_form.html.erb (1430.5ms)
+  Rendered cats/_form.html.erb (1432.3ms)
+  Rendered cats/_form.html.erb (1434.1ms)
+  Rendered cats/_form.html.erb (1437.0ms)
+  Rendered cats/_form.html.erb (1439.6ms)
+  Rendered cats/_form.html.erb (1441.5ms)
+  Rendered cats/_form.html.erb (1443.3ms)
+  Rendered cats/_form.html.erb (1445.1ms)
+  Rendered cats/_form.html.erb (1446.9ms)
+  Rendered cats/_form.html.erb (1448.8ms)
+  Rendered cats/_form.html.erb (1450.5ms)
+  Rendered cats/_form.html.erb (1452.4ms)
+  Rendered cats/_form.html.erb (1454.1ms)
+  Rendered cats/_form.html.erb (1455.9ms)
+  Rendered cats/_form.html.erb (1458.6ms)
+  Rendered cats/_form.html.erb (1461.5ms)
+  Rendered cats/_form.html.erb (1463.3ms)
+  Rendered cats/_form.html.erb (1465.1ms)
+  Rendered cats/_form.html.erb (1466.9ms)
+  Rendered cats/_form.html.erb (1468.7ms)
+  Rendered cats/_form.html.erb (1470.5ms)
+  Rendered cats/_form.html.erb (1472.4ms)
+  Rendered cats/_form.html.erb (1476.1ms)
+  Rendered cats/_form.html.erb within layouts/application (1479.1ms)
+Completed 500 Internal Server Error in 1513ms (ActiveRecord: 11.8ms)
+
+
+
+SystemStackError - stack level too deep:
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144165622960'
+  app/views/cats/_form.html.erb:1:in `_app_views_cats__form_html_erb__2225962311010517068_70144130192240'
+  app/controllers/cats_controller.rb:24:in `edit'
+
+Started POST "/__better_errors/c1ea8361b8e3604d/variables" for 127.0.0.1 at 2018-09-11 16:54:40 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:55:28 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+  Rendering cats/_form.html.erb within layouts/application
+  Rendered cats/_form.html.erb within layouts/application (3557.0ms)
+Completed 500 Internal Server Error in 3568ms (ActiveRecord: 0.6ms)
+
+
+
+NameError - undefined local variable or method `action' for #<#<Class:0x00007f976bd91700>:0x00007f976dac5d08>
+Did you mean?  action_url:
+  app/views/cats/_form.html.erb:3:in `_app_views_cats__form_html_erb__2225962311010517068_70144178398440'
+  app/controllers/cats_controller.rb:24:in `edit'
+
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:58:54 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCat Load (0.6ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:23
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 6.5ms)
+
+
+
+NoMethodError - undefined method `_form' for #<CatsController:0x00007f976ea62158>:
+  app/controllers/cats_controller.rb:24:in `edit'
+
+Started POST "/__better_errors/e15c09542332bd5d/variables" for 127.0.0.1 at 2018-09-11 16:58:56 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:59:22 -0700
+
+SyntaxError - syntax error, unexpected '(', expecting keyword_end
+   render :_form(cat)
+                ^
+/Users/appacademy/Desktop/W4D2/cats99/app/controllers/cats_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/cats_controller.rb:24:in `'
+
+Started POST "/__better_errors/55cae5557591a382/variables" for 127.0.0.1 at 2018-09-11 16:59:22 -0700
+Started GET "/cats/7/edit" for 127.0.0.1 at 2018-09-11 16:59:32 -0700
+
+SyntaxError - syntax error, unexpected '(', expecting keyword_end
+   render :form(cat)
+               ^
+/Users/appacademy/Desktop/W4D2/cats99/app/controllers/cats_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/controllers/cats_controller.rb:24:in `'
+
+Started POST "/__better_errors/cd19a6bd08833ffe/variables" for 127.0.0.1 at 2018-09-11 16:59:32 -0700
